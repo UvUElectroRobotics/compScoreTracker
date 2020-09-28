@@ -1,17 +1,19 @@
 import React from 'react'
-import Container from 'react-bootstrap/Container';
-import Col from 'react-bootstrap/Col'
-import Row from 'react-bootstrap/Row'
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import 'bootstrap-css-only/css/bootstrap.min.css';
+import 'mdbreact/dist/css/mdb.css';
+import { MDBCol, MDBContainer, MDBRow } from 'mdbreact';
+import TeamForm from './TeamForm.js'
 
 function MainContainer() {
   return(
-    <Container>
-      <Row>
-        <Col>1 of 3</Col>
-        <Col>2 of 3</Col>
-        <Col>3 of 3</Col>
-      </Row>
-    </Container>
+    <MDBContainer style={{border: '1px solid red'}}>
+      <MDBRow>
+        <MDBCol size = "4">
+          <TeamForm />
+        </MDBCol>
+      </MDBRow>
+    </MDBContainer>
   )
 }
 
