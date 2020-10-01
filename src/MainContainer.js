@@ -7,12 +7,25 @@ import TeamForm from './TeamForm.js'
 
 function MainContainer() {
   return(
-    <MDBContainer style={{border: '1px solid red'}}>
+    <MDBContainer className='mt-5'>
       <MDBRow>
         <MDBCol size = "4">
-          <TeamForm />
+          <TeamForm
+            teamName = "Team 1"
+          />
+        </MDBCol>
+        <MDBCol size = "4">
+          <TeamForm
+              teamName = "Team 2"
+            />
+        </MDBCol>
+        <MDBCol size = "4">
+          <TeamForm
+              teamName = "Team 3"
+            />
         </MDBCol>
       </MDBRow>
+
     </MDBContainer>
   )
 }
