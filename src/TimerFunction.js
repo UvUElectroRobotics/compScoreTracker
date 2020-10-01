@@ -1,5 +1,6 @@
 import React from 'react'
 import Timer from 'react-compound-timer'
+import { MDBBtn } from 'mdbreact'
 
 function TimerFunction() {
   let startTime = Math.round(0)
@@ -17,11 +18,11 @@ function TimerFunction() {
                     {/* <div>{timerState}</div> */}
 
                     <div className="d-flex justify-content-around">
-                      <button onClick={start}>Start</button>
-                      {/* <button onClick={pause}>Pause</button> */}
-                      {/* <button onClick={resume}>Resume</button> */}
-                      <button onClick={stop}>Stop</button>
-                      <button onClick={reset}>Reset</button>
+                      <MDBBtn onClick={start}>Start</MDBBtn>
+                      {/* <MDBBtn onClick={pause}>Pause</MDBBtn> */}
+                      {/* <MDBBtn onClick={resume}>Resume</MDBBtn> */}
+                      <MDBBtn onClick={stop}>Stop</MDBBtn>
+                      <MDBBtn onClick={reset}>Reset</MDBBtn>
                     </div>
                   </React.Fragment>
                 )}
